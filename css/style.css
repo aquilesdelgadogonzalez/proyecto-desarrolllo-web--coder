@@ -1,0 +1,665 @@
+*{
+    margin:0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* contenido header*/
+
+header { 
+    flex-wrap: wrap;
+    padding-top: 10px;
+    width: 100%;
+    height: 20%;
+    background-color: aqua;
+    background-image: url(../assets/img/portada.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    position: fixed;
+   
+    
+}
+
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    border-bottom: 50px;
+    
+  
+    
+    
+}
+
+
+.navbar li a{ 
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    border: 2px #37ff00da solid;
+    background-color: #0f549e;
+    border-radius: 5px;
+
+
+
+}
+
+
+.header h1 {
+    display: flex;
+    align-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 5px 5px 7px #ff0000;
+    
+    font-size: 70px;
+    
+}
+
+
+
+/* contenido hoja principal*/
+
+.main1{
+    flex-wrap: wrap;
+    background-color: blue;
+    grid-area: main;
+    width: 100%;
+    height: 120vh;
+    background-image: url(../assets/img/R.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-content: center;
+   
+
+}
+
+
+.contenido1{
+
+display: flex;
+flex-direction:row ;
+flex-wrap: wrap;
+align-content: center;
+align-items: center;
+gap: 10px;
+
+display: grid;
+grid-template-columns: repeat(1 10%);
+grid-template-rows: repeat(2 100%);
+grid-template-areas: 
+"el_club como_jugar"
+"servicios contacto"
+
+
+
+}
+
+.contenido1 div {
+    flex-wrap: wrap;
+    width: 450px;
+    height: 250px;
+    border: 1px black solid;
+    margin-top: 150px;
+    margin-left: 150px;
+    background-image: url(../assets/img/pasto.jpg);
+    color: #0f549e;
+    margin-left: 100px;
+  
+
+}
+
+.contenido1 div h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #ffffff;
+    text-shadow: 5px 5px 7px #ff0000;
+}
+
+.como_jugar {
+    grid-area: como_jugar;
+    display: flex;
+    background-color: rgb(11, 239, 205);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+
+.como_jugar img {
+    width: 420px;
+    height:200px ;
+    border: 1px white solid;
+    display: flex;
+    align-self: center;
+
+}
+
+
+
+.el_club {
+
+    grid-area: el_club;
+    background-color: blueviolet;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    
+}
+
+.el_club img {
+    width: 420px;
+    height:200px;
+    border: 1px white solid;
+    display: flex;
+    align-self: center;
+    margin-left: 15px;
+    }
+
+
+
+.servicios {
+    width: 420px;
+    height:200px ;
+    grid-area: servicios;
+    background-color: brown;
+    
+}
+
+.servicios img {
+    width: 420px;
+    height:200px;
+    border: 1px white solid;
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    }
+
+
+.contacto {
+    width: 420px;
+    height:200px ;
+    grid-area: contacto;
+    background-color: #37ff00da;
+    
+}
+
+.contacto img {
+    width: 420px;
+    height:200px;
+    border: 1px white solid;
+    display: flex;
+    align-self: center;
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+
+
+/*contenido pagina el club*/
+
+.main2 {
+
+    display: grid;
+    grid-template-columns: repeat(3 100%);
+    grid-template-rows: repeat(2 100%);
+    grid-template-areas: 
+    "portada2 portada2 portada2"
+ 
+    ;
+
+}
+
+.portada2 {
+    
+    grid-area: portada2;
+
+
+    
+    
+}
+.portada2 img {
+   display: flex;
+   width: 100%;
+   height: 400px
+}
+
+.portada2 h2 {
+    display: flex;
+    font-size: 80px;
+    margin-top: 50px;
+    position: absolute;
+    padding: 150px 0 0 520px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px  #ff0000;
+}
+
+.parrafo2  {
+    grid-area: parrafo2;
+    display: flex;
+    flex-direction: column;
+    color: #0f549e;
+    width: 60%;
+    
+    
+}
+
+.parrafo2 img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+
+}
+
+.parrafo2 p {
+    display: flex;
+    width: 400px;
+    text-size-adjust: auto;
+    text-align: justify;
+    margin: 40px 100px;
+    flex-direction: column;
+   
+
+}
+.parrafo2 h2 {
+    margin-left: 250px;
+}
+
+.imagen2 img{
+    width: 500px;
+    height: 350px;
+    margin-top: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/*pagina como jugar*/
+
+.main3 {
+    color: #0f549e;
+}
+.section3 div  img {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.div3 {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.div3 p{
+    display: flex;
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+    width: 800px;
+}
+
+.div3-1 p {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+
+
+}
+
+.div3-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div3-2 h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 40px;
+} 
+
+.div3-2 img {
+    width: 400px;
+    height: 400px;
+    align-content: center;
+    margin-left: 550px;
+
+}
+.div3-2 p {
+    text-align: center;
+    padding: 30px 30px;
+
+}
+
+.div3-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div3-3 h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 40px;
+} 
+
+.div3-3 img {
+    width: 400px;
+    height: 400px;
+    align-content: center;
+    margin-left: 550px;
+
+}
+.div3-3 p {
+    text-align: center;
+    padding: 30px 30px;
+
+}
+.div3-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div3-4 h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 40px;
+} 
+
+.div3-4 img {
+    width: 400px;
+    height: 400px;
+    align-content: center;
+    margin-left: 550px;
+
+}
+.div3-4 p {
+    text-align: center;
+    padding: 30px 30px;
+
+}
+
+/* PAGINA SERVICIOS*/
+
+.section4 div img {
+    width: 100%;
+    height: 300px;
+
+}
+.section4 div h2 {
+    display: flex;
+    position: absolute;
+    font-size: 40px;
+    margin: 200px 550px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px red;
+}
+
+.section4-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #0f549e;
+}
+.div4 {
+    
+    padding: 20px 20px ;
+    width: 700px;
+    
+
+}
+
+.div4 h2 {
+  
+    font-size: 30px;
+    text-align: center;
+    border-top: 20px;
+}
+
+.div4 p {
+   
+    text-align: justify;
+    padding: 20px 20px ;
+}
+
+.div4-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    
+}
+
+/* PAGINA DE CONTACTO */
+
+.section5 div iframe {
+    display: flex;
+    width: 100%;
+  
+   
+}
+
+.div5 {
+   
+    align-content: center;
+    margin-top: -30px;
+    background-color: #83f114;
+    height: 100px;
+    height: 200px;
+    padding:  20px 20px 20px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #0f549e;
+   
+    
+}
+
+.div5 h2 {
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+
+    font-size: 40px;
+}
+
+.div5 p {   
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+/*footer*/
+
+footer{
+    flex-wrap: wrap;
+    grid-area: footer;
+    width: 100%;
+
+
+}
+
+footer section {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+footer section div {
+    align-content: center;
+    width: 100%;
+    
+
+
+    
+}
+
+.diva {
+    background-color: #83f114;
+    text-align: center;
+    color: #0f549e;
+
+}
+
+.divb {
+    background-color: #0f549e;
+    text-align: center;
+    color: #83f114;
+
+}
+
+.diva h2 {
+    color: #0f549e;
+}
+ .divb h2 {
+    color: #83f114;
+ }
+
+
+
+/* @media 1024px*/
+
+ @media(max-width: 1024px) and (orientation:landscape){
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 10PX;
+        
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+    .contenido1 {
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    .contenido1 div {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    }
+
+/* el_club */
+
+.main2 {
+
+    display: grid;
+    grid-template-columns: repeat(3 50px);
+    grid-template-rows: repeat(2 50px);
+    grid-template-areas: 
+    "portada2 portada2 portada2"
+    "parrafo2 parrafo2 imagen2"
+    ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px)  and (orientation:landscape){ 
+header{
+    justify-content: center;
+    align-items: center;
+
+
+    
+}
+.navbar{
+    justify-content: center;
+    align-content: center;
+    margin-left: 0;
+    margin-top: 10px
+    ;
+}
+.header h1{
+    font-size: 50px;
+}
+.main1 {
+    width: 100%;
+}
+.contenido1 {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.contenido1 div {
+    width: 300px;
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.como_jugar img {
+    
+    width: 290px;
+    height: 110px;
+}
+.contenido1 div h2 {
+    font-size: 16px;
+}
+.el_club img{
+    width: 290px;
+    height: 110px;
+    margin-left: 5px;
+}
+.servicios img {
+    width: 290px;
+    height: 110px;
+    margin-left: 5px;
+}
+.contacto img {
+    width: 290px;
+    height: 110px;
+    margin-left: 5px;
+}
+
+}
+
+
+
+
+@media(max-width:425px) and (orientation:landscape){
+    .navbar{
+        padding-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+
+}
